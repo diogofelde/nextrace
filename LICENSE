@@ -1,21 +1,95 @@
-MIT License
+# NexTrance 🔍
 
-Copyright (c) 2025 Diogo Felde
+🏷️ Badges de Status
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/diogofelde/nextrance/deploy.yml)
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m78812345678)
+![License](https://img.shields.io/github/license/diogofelde/nextrance)
+![Last Commit](https://img.shields.io/github/last-commit/diogofelde/nextrance)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**NexTrance** é uma plataforma de rastreamento e sanitização de dados sensíveis em projetos Python, com foco em ambientes Django.  
+Seu propósito é **monitorar, proteger e mitigar riscos** relacionados a informações confidenciais como credenciais, tokens e dados pessoais.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+> Projeto privado em desenvolvimento contínuo.  
+> Parte do ecossistema **CyberScoutAcademy**.
+
+---
+
+## 🌐 Ecossistema Frontend & Infra
+
+- **React.js**
+- **Tailwind CSS**
+- **Vite**
+- **Firebase Hosting**
+- **GitHub Actions**
+- **UptimeRobot**
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+### 🔧 Backend & Automação
+- Python 3.13
+- Django
+- pytest
+- venv + `requirements.txt`
+
+### 📚 Bibliotecas Python
+- colorama
+- iniconfig
+- packaging
+- pluggy
+- pygments
+
+---
+
+## 🚀 Funcionalidades
+
+- 🔎 Scanner de dados sensíveis em arquivos `.py`
+- 🧼 Sanitização automática de variáveis e strings
+- 📊 Relatórios de rastreamento
+- 🧪 Suíte de testes com `pytest`
+- 🧠 Integração com módulos de inteligência de segurança
+
+---
+
+## 📦 Instalação
+
+```bash
+git clone https://github.com/diogofelde/nextrace.git
+cd nextrace
+
+# Criar ambiente virtual
+python -m venv .venv
+
+# Ativar ambiente
+.\\.venv\\Scripts\\activate  # Windows
+source .venv/bin/activate    # Linux/macOS
+
+# Instalar dependências
+pip install -r requirements.txt
+
+🛡️ Segurança
+Este projeto utiliza variáveis sensíveis via .env, protegidas por .gitignore. Nunca compartilhe suas credenciais ou chaves de API publicamente.
+
+📡 Monitoramento
+Status em tempo real via UptimeRobot
+
+Deploy automatizado com GitHub Actions
+
+Hosting via Firebase
+
+Último status: 
+🔴 nextrace.web.app ficou fora do ar por 9h38min (erro 404) 
+🟢 Voltou ao ar há 22h32min — uptime geral: 72.86% nas últimas 24h
+
+👨‍💻 Autor
+Diogo Felde Desenvolvedor Python & Front-end GitHub • LinkedIn
+
+📄 Licença
+Distribuído sob a licença MIT. Sinta-se livre para usar, modificar e contribuir com responsabilidade.
+
+
+---
+
+Pode copiar e colar direto no GitHub. Se quiser, posso te ajudar a adicionar badges de status, criar um roadmap ou configurar uma seção de contribuições. Bora deixar o NexTrance com presença de palco! 🎛️
