@@ -1,0 +1,6 @@
+academy/
+├── templates/
+│   └── academy/
+│       ├── dashboard.html
+│       ├── modulo_detail.html
+│       └── atividade_detail.html

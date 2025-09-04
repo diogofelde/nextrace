@@ -1,0 +1,6 @@
+<h3>Ranking dos Exploradores</h3>
+<ol>
+ {% for perfil in ranking %}
+ <li>{{ perfil.usuario.username }}  {{ perfil.xp_total }} XP</li>
+ {% endfor %}
+</ol>

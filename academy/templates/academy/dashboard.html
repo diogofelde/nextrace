@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>NexTrace Academy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Bem-vindo, {{ user.username }}!</h1>
+
+  <h2>Seu progresso</h2>
+  <ul>
+    {% for modulo in modulos %}
+      <li>
+        <a href="{{ url_for('modulo_detail', id=modulo.id) }}">{{ modulo.nome }}</a> – Nível {{ modulo.nivel }}
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

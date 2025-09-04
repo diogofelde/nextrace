@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+ <h1>Login</h1>
+ <form method="POST">
+ <input type="text" name="username" placeholder="Usurio" required>
+ <input type="password" name="password" placeholder="Senha" required>
+ <button type="submit">Entrar</button>
+ </form>
+ <a href="{{ url_for('auth.register') }}">Registrar</a>
+</body>
+</html>

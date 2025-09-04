@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel NexTrace</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NexTrace Academy</h1>
+      <p class="subtitle">Painel Administrativo de Monitoramento</p>
+    </header>
+
+    <section class="log-section">
+      <h2>Histórico de Restaurações</h2>
+      <ul id="log-list"></ul>
+      <div class="buttons">
+        <button onclick="exportLog()">Exportar JSON</button>
+        <button onclick="clearLog()">Limpar Histórico</button>
+      </div>
+    </section>
+
+    <section class="chart-section">
+      <h2>Atividade Diária</h2>
+      <canvas id="activityChart"></canvas>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 NexTrace Academy. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ranking = PerfilUsuario.objects.order_by('-xp_total')[:10]

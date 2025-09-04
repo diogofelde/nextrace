@@ -1,0 +1,14 @@
+import streamlit as st
+from models import Usuario
+from main import app, db
+
+st.set_page_config(page_title="NexTrace Dashboard", layout="wide")
+
+with app.app_context():
+ usuarios = Usuario.query.all()
+
+st.title(" NexTrace Dashboard")
+st.write(f"Total de usurios: {len(usuarios)}")
+
+for u in usuarios:
+ st.write(f" {u.nome}  {u.email}")

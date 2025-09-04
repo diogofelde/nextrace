@@ -1,0 +1,53 @@
+<button id="btnVoz">Falar com o mascote</button>
+
+<script>
+  // Verifica compatibilidade
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) {
+    alert('Seu navegador não suporta reconhecimento de voz nativo.');
+  } else {
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'pt-BR';              // Define idioma
+    recognition.interimResults = false;      // Só resultados finais
+    recognition.maxAlternatives = 1;         // Melhor hipótese
+
+    // Evento: captura do resultado
+    recognition.addEventListener('result', e => {
+      const texto = e.results[0][0].transcript.trim();
+      console.log('Você disse:', texto);
+      responderMascote(texto);
+    });
+
+    // Evento: erro ou fim
+    recognition.addEventListener('error', e => {
+      console.error('Erro no reconhecimento:', e.error);
+    });
+
+    // Ativa ao clicar no botão
+    document.getElementById('btnVoz')
+      .addEventListener('click', () => recognition.start());
+  }
+
+  // Função de resposta do mascote usando síntese de voz
+  function responderMascote(pergunta) {
+    let resposta = '';
+
+    // Mapeie aqui as intenções ou palavras-chave
+    if (/olá|oi|bom dia/i.test(pergunta)) {
+      resposta = 'Olá! Em que posso ajudar hoje?';
+    }
+    else if (/ajuda|suporte/i.test(pergunta)) {
+      resposta = 'Claro, me conte mais sobre o que você precisa.';
+    }
+    else {
+      resposta = 'Interessante… deixe-me pesquisar isso para você.';
+    }
+
+    // Síntese de voz
+    const utterance = new SpeechSynthesisUtterance(resposta);
+    utterance.lang = 'pt-BR';
+    utterance.rate = 1;      // velocidade
+    utterance.pitch = 1.1;   // timbre
+    speechSynthesis.speak(utterance);
+  }
+</script>

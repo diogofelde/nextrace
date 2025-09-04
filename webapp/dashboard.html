@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8" />
+ <title>Painel NexTrace</title>
+ <link rel="stylesheet" href="style.css" />
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+ <div class="container">
+ <h1>NexTrace Academy</h1>
+ <p id="welcome-msg"></p>
+
+ <section>
+ <h2> Histrico</h2>
+ <ul id="log-list"></ul>
+ <button onclick="exportLog()">Exportar JSON</button>
+ <button onclick="clearLog()">Limpar</button>
+ </section>
+
+ <section>
+ <h2> Atividade</h2>
+ <canvas id="activityChart"></canvas>
+ </section>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>

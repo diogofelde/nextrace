@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ativação do Sistema</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      text-align: center;
+      padding: 10vh 2rem;
+    }
+    h2 {
+      color: #2e7d32;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <main role="main">
+    <h2>Sistema ativado com sucesso!</h2>
+    <p>Chave usada: <strong>{{ serial }}</strong></p>
+  </main>
+</body>
+</html>

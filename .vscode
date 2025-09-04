@@ -1,0 +1,18 @@
+
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode", 
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode.vscode-node-azure-pack",
+    "humao.rest-client",
+    "ritwickdey.LiveServer",
+    "usernamehw.errorlens",
+    "pflannery.vscode-versionlens",
+    "christian-kohler.path-intellisense",
+    "mzlogin.solarized-dark",
+    "naumovs.color-highlight"
+  ]
+}

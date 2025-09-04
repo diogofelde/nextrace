@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h1>Bem-vindo, {{ nome }}!</h1>
+
+{% if perfil %}
+<p> Perfil: <strong>{{ perfil.perfil }}</strong></p>
+{% else %}
+<p> Defina seu perfil:
+ <a href="/definir_perfil/BlueTeam">BlueTeam</a> |
+ <a href="/definir_perfil/RedTeam">RedTeam</a>
+</p>
+{% endif %}
+
+{% if nivel %}
+<p> Nvel: {{ nivel.nivel }} | XP: {{ nivel.xp }}</p>
+{% endif %}
+
+<h2> ltimas atividades</h2>
+<ul>
+ {% for log in logs %}
+ <li>{{ log.timestamp.strftime('%d/%m/%Y %H:%M') }} - {{ log.acao }}</li>
+ {% endfor %}
+</ul>
+
+<p><a href="/chat-ia"> Chat com IA</a></p>
+<p><a href="/logout">Sair</a></p>
+{% endblock %}

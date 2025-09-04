@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ modulo.nome }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>{{ modulo.nome }}</h1>
+    <p>{{ modulo.descricao }}</p>
+
+    <h2>Atividades</h2>
+    <ul>
+      {% for atividade in modulo.atividades %}
+        <li>
+          <a href="{{ url_for('atividade_detail', id=atividade.id) }}">{{ atividade.titulo }}</a>
+          – {{ atividade.tipo }}
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body {
+ background-color: #0a1a2f;
+ color: white;
+ font-family: "Segoe UI", sans-serif;
+ padding: 20px;
+}
+
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+h1 {
+ font-size: 28px;
+}
+
+.mascote {
+ width: 60px;
+ height: 60px;
+ background-image: url("mascote4.png"); /* substitua com sua imagem */
+ background-size: cover;
+}
+
+.nome {
+ color: #00ff88;
+}
+
+h3 {
+ color: #00ff88;
+ margin-top: 30px;
+}
+
+.card {
+ background-color: #112b4a;
+ border-radius: 10px;
+ padding: 15px;
+ margin: 10px 0;
+ color: white;
+ font-weight: bold;
+ box-shadow: 0 0 10px #00ff88;
+ cursor: pointer;
+}
+
+.card:hover {
+ background-color: #173b5c;
+}

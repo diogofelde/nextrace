@@ -1,0 +1,2 @@
+2025-08-26 16:37:56.753284 - Movido: log_gerenciador.txt → dados/
+2025-08-26 16:37:56.757247 - ✅ Gerenciamento concluído

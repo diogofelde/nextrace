@@ -1,0 +1,157 @@
+"use strict";
+(self.webpackChunkgrafana_exploretraces_app =
+ self.webpackChunkgrafana_exploretraces_app || []).push([
+ [2],
+ {
+ 3621: (e, a, l) => {
+ (l.r(a), l.d(a, { default: () => r }));
+ var r = {
+ "grafana-scenes": {
+ components: {
+ "adhoc-filter-pill": {
+ "edit-filter-with-key":
+ "Modifier le filtre ayant pour cl {{keyLabel}}",
+ "managed-filter": "Filtre gr {{origin}}",
+ "remove-filter-with-key":
+ "Supprimer le filtre ayant pour cl {{keyLabel}}",
+ },
+ "adhoc-filters-combobox": {
+ "remove-filter-value":
+ "Supprimer la valeur du filtre {{itemLabel}}",
+ "use-custom-value":
+ "Utiliser une valeur personnalise: {{itemLabel}}",
+ },
+ "fallback-page": {
+ content:
+ "Si vous tes arriv ici via un lien, il se peut quil y ait un bug dans lapplication.",
+ subTitle: "LURL ne correspond  aucune page",
+ title: "Page introuvable",
+ },
+ "nested-scene-renderer": {
+ "collapse-button-label": "Rduire la scne",
+ "expand-button-label": "Dvelopper la scne",
+ "remove-button-label": "Supprimer la scne",
+ },
+ "scene-debugger": {
+ "object-details": "Dtails de lobjet",
+ "scene-graph": "Graphique de la scne",
+ "title-scene-debugger": "Dbogueur de scne",
+ },
+ "scene-grid-row": {
+ "collapse-row": "Rduire la ligne",
+ "expand-row": "Dvelopper la ligne",
+ },
+ "scene-time-range-compare-renderer": {
+ "button-label": "Comparaison",
+ "button-tooltip": "Activer la comparaison dintervalles",
+ },
+ splitter: {
+ "aria-label-pane-resize-widget":
+ "Widget de redimensionnement du panneau",
+ },
+ "viz-panel": { title: { title: "Titre" } },
+ "viz-panel-explore-button": { explore: "Explorer" },
+ "viz-panel-renderer": {
+ "loading-plugin-panel": "Chargement du panneau du plugin",
+ "panel-plugin-has-no-panel-component":
+ "Le plugin de panneau ne contient aucun composant de panneau",
+ },
+ "viz-panel-series-limit": {
+ "content-rendering-series-single-panel-impact-performance":
+ "Le rendu dun trop grand nombre de sries dans un seul panneau peut nuire aux performances et rendre les donnes plus difficiles  lire.",
+ "warning-message": "Affichage limit  {{seriesLimit}}sries",
+ },
+ },
+ utils: {
+ "controls-label": { "tooltip-remove": "Supprimer" },
+ "loading-indicator": {
+ "content-cancel-query": "Annuler la requte",
+ },
+ },
+ variables: {
+ "ad-hoc-combobox": {
+ "aria-label-edit-filter-operator":
+ "Modifier loprateur du filtre",
+ },
+ "ad-hoc-filter-builder": {
+ "aria-label-add-filter": "Ajouter un filtre",
+ "title-add-filter": "Ajouter un filtre",
+ },
+ "ad-hoc-filter-renderer": {
+ "aria-label-remove-filter": "Supprimer le filtre",
+ "key-select": {
+ "placeholder-select-label": "Slectionner une tiquette",
+ },
+ "label-select-label": "Slectionner une tiquette",
+ "title-remove-filter": "Supprimer le filtre",
+ "value-select": {
+ "placeholder-select-value": "Slectionner une valeur",
+ },
+ },
+ "data-source-variable": { label: { default: "par dfaut" } },
+ "default-group-by-custom-indicator-container": {
+ "aria-label-clear": "effacer",
+ tooltip:
+ "Appliqu par dfaut dans ce tableau de bord. En cas de modification, il sapplique aussi aux autres tableaux de bord.",
+ "tooltip-restore-groupby-set-by-this-dashboard":
+ "Restaurer le groupage dfini par ce tableau de bord.",
+ },
+ "format-registry": {
+ formats: {
+ description: {
+ "commaseparated-values": "Valeurs spares par des virgules",
+ "double-quoted-values": "Valeurs entre guillemets doubles",
+ "format-date-in-different-ways":
+ "Formater la date de diffrentes faons",
+ "format-multivalued-variables-using-syntax-example":
+ "Formater les variables  valeurs multiples avec la syntaxe glob: exemple {value1,value2}",
+ "html-escaping-of-values": "chappement HTML des valeurs",
+ "json-stringify-value": "Valeur au format JSON (stringify)",
+ "keep-value-as-is": "Conserver la valeur telle quelle",
+ "multiple-values-are-formatted-like-variablevalue":
+ "Plusieurs valeurs sont formates ainsi: variable=valeur",
+ "single-quoted-values": "Valeurs entre guillemets simples",
+ "useful-escaping-values-taking-syntax-characters":
+ "Utile pour lchappement des valeurs dans les URL en tenant compte des caractres de syntaxe URI",
+ "useful-for-url-escaping-values":
+ "Utile pour lchappement des valeurs dans les URL",
+ "values-are-separated-by-character":
+ "Les valeurs sont spares par le caractre |",
+ },
+ },
+ },
+ "group-by-variable-renderer": {
+ "aria-label-group-by-selector": "Slecteur de regroupement",
+ "placeholder-group-by-label": "Regrouper par tiquette",
+ },
+ "interval-variable": {
+ "placeholder-select-value": "Slectionner une valeur",
+ },
+ "loading-options-placeholder": {
+ "loading-options": "Chargement des options...",
+ },
+ "multi-value-apply-button": { apply: "Appliquer" },
+ "no-options-placeholder": {
+ "no-options-found": "Aucune option trouve",
+ },
+ "options-error-placeholder": {
+ "error-occurred-fetching-labels-click-retry":
+ "Une erreur est survenue lors de la rcupration des tiquettes. Cliquez pour ressayer",
+ },
+ "test-object-with-variable-dependency": {
+ title: { hello: "Bonjour" },
+ },
+ "test-variable": { text: { text: "Texte" } },
+ "variable-value-input": {
+ "placeholder-enter-value": "Saisir une valeur",
+ },
+ "variable-value-select": {
+ "placeholder-select-value": "Slectionner une valeur",
+ },
+ },
+ },
+ };
+ },
+ },
+]);
+//# sourceMappingURL=2.js.map

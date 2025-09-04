@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ atividade.titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>{{ atividade.titulo }}</h1>
+    <p>{{ atividade.descricao }}</p>
+
+    {% if progresso.concluido %}
+      <p><strong>Atividade concluída!</strong></p>
+    {% else %}
+      <form method="post">
+        {{ csrf_token() }}
+        <button type="submit">Marcar como concluída</button>
+      </form>
+    {% endif %}
+  </body>
+</html>

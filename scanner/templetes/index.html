@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <title>NexTrace Scanner</title>
+ <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+ <h1>NexTrace Academy</h1>
+ <form method="POST">
+ <input type="text" name="target" placeholder="Digite o IP ou domnio" required>
+ <button type="submit">Escanear</button>
+ </form>
+
+ {% if results %}
+ <h2>Resultado:</h2>
+ <pre>{{ results | safe }}</pre>
+ {% endif %}
+</body>
+</html>

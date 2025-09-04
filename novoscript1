@@ -1,0 +1,48 @@
+# Ativa o ambiente virtual
+Write-Host "Ativando ambiente virtual..."
+.\venv\Scripts\Activate.ps1
+
+# Define codificação UTF-8 para saída no terminal
+$OutputEncoding = [Console]::OutputEncoding = [Text.Encoding]::UTF8
+
+# Verifica configurações do Django
+Write-Host "Verificando configurações..."
+python manage.py check --settings=NexTrace.settings
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Erro ao verificar configurações. Encerrando script."
+    exit 1
+}
+
+# Aplica migrações
+Write-Host "Aplicando migrações..."
+python manage.py makemigrations --settings=NexTrace.settings
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Erro ao criar migrações. Encerrando script."
+    exit 1
+}
+
+python manage.py migrate --settings=NexTrace.settings
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Erro ao aplicar migrações. Encerrando script."
+    exit 1
+}
+
+# Executa testes automatizados
+Write-Host "Executando testes..."
+python manage.py test --settings=NexTrace.settings
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Falha nos testes automatizados. Encerrando script."
+    exit 1
+}
+
+# Lista migrações
+Write-Host "Listando migrações..."
+python manage.py showmigrations --settings=NexTrace.settings
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Erro ao listar migrações. Encerrando script."
+    exit 1
+}
+
+# Inicia o servidor local
+Write-Host "Iniciando servidor local..."
+python manage.py runserver --settings=NexTrace.settings

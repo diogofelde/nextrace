@@ -1,0 +1,148 @@
+"use strict";
+(self.webpackChunkgrafana_exploretraces_app =
+ self.webpackChunkgrafana_exploretraces_app || []).push([
+ [150],
+ {
+ 5150: (e, a, r) => {
+ (r.r(a), r.d(a, { default: () => o }));
+ var o = {
+ "grafana-scenes": {
+ components: {
+ "adhoc-filter-pill": {
+ "edit-filter-with-key": "Editar filtro com chave {{keyLabel}}",
+ "managed-filter": "Filtro gerenciado de {{origin}}",
+ "remove-filter-with-key": "Remover filtro com chave {{keyLabel}}",
+ },
+ "adhoc-filters-combobox": {
+ "remove-filter-value": "Remover valor do filtro: {{itemLabel}}",
+ "use-custom-value": "Usar valor personalizado: {{itemLabel}}",
+ },
+ "fallback-page": {
+ content:
+ "Se voc chegou aqui usando um link, pode haver um bug neste aplicativo.",
+ subTitle: "O URL no corresponde a nenhuma pgina",
+ title: "No encontrado",
+ },
+ "nested-scene-renderer": {
+ "collapse-button-label": "Recolher cena",
+ "expand-button-label": "Expandir cena",
+ "remove-button-label": "Remover cena",
+ },
+ "scene-debugger": {
+ "object-details": "Detalhes do objeto",
+ "scene-graph": "Grfico de cena",
+ "title-scene-debugger": "Depurador de cena",
+ },
+ "scene-grid-row": {
+ "collapse-row": "Recolher linha",
+ "expand-row": "Expandir linha",
+ },
+ "scene-time-range-compare-renderer": {
+ "button-label": "Comparao",
+ "button-tooltip": "Ativar comparao de intervalo de tempo",
+ },
+ splitter: {
+ "aria-label-pane-resize-widget":
+ "Widget de redimensionamento do painel",
+ },
+ "viz-panel": { title: { title: "Ttulo" } },
+ "viz-panel-explore-button": { explore: "Explorar" },
+ "viz-panel-renderer": {
+ "loading-plugin-panel": "Carregando painel do plug-in",
+ "panel-plugin-has-no-panel-component":
+ "O plug-in do painel no possui componente de painel",
+ },
+ "viz-panel-series-limit": {
+ "content-rendering-series-single-panel-impact-performance":
+ "Renderizar muitas sries em um nico painel pode afetar o desempenho e dificultar a leitura dos dados.",
+ "warning-message": "Mostrando apenas {{seriesLimit}} srie(s)",
+ },
+ },
+ utils: {
+ "controls-label": { "tooltip-remove": "Remover" },
+ "loading-indicator": {
+ "content-cancel-query": "Cancelar consulta",
+ },
+ },
+ variables: {
+ "ad-hoc-combobox": {
+ "aria-label-edit-filter-operator": "Editar operador de filtro",
+ },
+ "ad-hoc-filter-builder": {
+ "aria-label-add-filter": "Adicionar filtro",
+ "title-add-filter": "Adicionar filtro",
+ },
+ "ad-hoc-filter-renderer": {
+ "aria-label-remove-filter": "Remover filtro",
+ "key-select": { "placeholder-select-label": "Selecionar rtulo" },
+ "label-select-label": "Selecionar rtulo",
+ "title-remove-filter": "Remover filtro",
+ "value-select": {
+ "placeholder-select-value": "Selecionar valor",
+ },
+ },
+ "data-source-variable": { label: { default: "padro" } },
+ "default-group-by-custom-indicator-container": {
+ "aria-label-clear": "limpar",
+ tooltip:
+ "Aplicado por padro neste painel. Se editado, ele  transferido para outros painis.",
+ "tooltip-restore-groupby-set-by-this-dashboard":
+ "Restaura a funo groupby definida por este painel.",
+ },
+ "format-registry": {
+ formats: {
+ description: {
+ "commaseparated-values": "Valores separados por vrgula",
+ "double-quoted-values": "Valores entre aspas duplas",
+ "format-date-in-different-ways":
+ "Formatar data de diferentes maneiras",
+ "format-multivalued-variables-using-syntax-example":
+ "Formatar variveis de mltiplos valores usando a sintaxe glob. Por exemplo: {value1,value2}",
+ "html-escaping-of-values": "Escape HTML de valores",
+ "json-stringify-value": "Valor convertido em string JSON",
+ "keep-value-as-is": "Manter o valor como est",
+ "multiple-values-are-formatted-like-variablevalue":
+ "Vrios valores so formatados como varivel=valor",
+ "single-quoted-values": "Valores entre aspas simples",
+ "useful-escaping-values-taking-syntax-characters":
+ "til para valores de escape de URL, levando em considerao caracteres de sintaxe URI",
+ "useful-for-url-escaping-values":
+ "til para valores de escape de URL",
+ "values-are-separated-by-character":
+ 'Os valores so separados pelo caractere "|"',
+ },
+ },
+ },
+ "group-by-variable-renderer": {
+ "aria-label-group-by-selector": "Agrupar por seletor",
+ "placeholder-group-by-label": "Agrupar por rtulo",
+ },
+ "interval-variable": {
+ "placeholder-select-value": "Selecionar valor",
+ },
+ "loading-options-placeholder": {
+ "loading-options": "Carregando opes",
+ },
+ "multi-value-apply-button": { apply: "Aplicar" },
+ "no-options-placeholder": {
+ "no-options-found": "Nenhuma opo encontrada",
+ },
+ "options-error-placeholder": {
+ "error-occurred-fetching-labels-click-retry":
+ "Ocorreu um erro ao buscar rtulos. Clique para tentar novamente",
+ },
+ "test-object-with-variable-dependency": { title: { hello: "Ol" } },
+ "test-variable": { text: { text: "Texto" } },
+ "variable-value-input": {
+ "placeholder-enter-value": "Digite um valor",
+ },
+ "variable-value-select": {
+ "placeholder-select-value": "Selecionar valor",
+ },
+ },
+ },
+ };
+ },
+ },
+]);
+//# sourceMappingURL=150.js.map

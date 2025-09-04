@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Dashboard",
+    "key": "dashboard",
+    "subtitles": [
+      { "title": "Visão Geral",    "key": "overview" },
+      { "title": "Indicadores",     "key": "metrics" },
+      { "title": "Alertas",         "key": "alerts" },
+      { "title": "Tendências",      "key": "trends" },
+      { "title": "Drill-down",      "key": "drilldown" }
+    ],
+    "description": "Visão rápida e detalhada dos KPIs em tempo real"
+  },
+  {
+    "title": "Configurações",
+    "key": "settings",
+    "subtitles": [
+      { "title": "Perfis",         "key": "profiles" },
+      { "title": "Permissões",     "key": "permissions" },
+      { "title": "Notificações",   "key": "notifications" },
+      { "title": "Integrações",    "key": "integrations" },
+      { "title": "Logs",           "key": "logs" },
+      { "title": "Preferências",   "key": "preferences" }
+    ],
+    "description": "Ajustes globais do sistema, acessos, integrações e auditoria"
+  },
+  {
+    "title": "Usuário",
+    "key": "user",
+    "subtitles": [
+      { "title": "Meu Perfil",     "key": "my_profile" },
+      { "title": "Segurança",      "key": "security" },
+      { "title": "Preferências",   "key": "user_preferences" }
+    ],
+    "description": "Configurações e dados específicos de cada usuário"
+  },
+  {
+    "title": "Suporte",
+    "key": "support",
+    "subtitles": [
+      { "title": "Help Desk",      "key": "helpdesk" },
+      { "title": "Status do Sistema", "key": "system_status" }
+    ],
+    "description": "Canal de atendimento e status operacional em tempo real"
+  }
+]

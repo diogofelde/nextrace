@@ -1,0 +1,2 @@
+<h2>PDF Gerado</h2>
+<a href="{{ path }}">Baixar PDF</a>

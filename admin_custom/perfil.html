@@ -1,0 +1,23 @@
+<h2>Olá, {{ perfil.usuario.first_name }}!</h2>
+<p>XP Total: {{ perfil.xp_total }}</p>
+<p>Nível Atual: {{ nivel.nome }}</p>
+
+<h3>Suas Conquistas:</h3>
+<ul>
+  {% for conquista_usuario in conquistas %}
+    <li style="display: flex; align-items: center; margin-bottom: 10px;">
+      <img
+        src="{{ url_for('static', filename=conquista_usuario.conquista.icone) }}"
+        alt="{{ conquista_usuario.conquista.nome }}"
+        width="50"
+        style="margin-right: 10px; border-radius: 4px;"
+      />
+      <div>
+        <strong>{{ conquista_usuario.conquista.nome }}</strong><br />
+        <span>{{ conquista_usuario.conquista.descricao }}</span>
+      </div>
+    </li>
+  {% else %}
+    <li>Você ainda não conquistou nenhuma medalha.</li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,18 @@
+import os
+import pytest
+from nextrace import rastrear_dados, sanitizar_arquivo
+
+@pytest.fixture
+def arquivo_exemplo(tmp_path):
+    caminho = tmp_path / "exemplo.py"
+    caminho.write_text("print('Olá mundo')\n# dado sensível: senha123")
+    return str(caminho)
+
+def test_rastrear_dados(arquivo_exemplo):
+    relatorio = rastrear_dados(arquivo_exemplo)
+    assert isinstance(relatorio, object), "O retorno não é um objeto"
+    assert hasattr(relatorio, 'dados_encontrados'), "O objeto não possui atributo 'dados_encontrados'"
+
+def test_sanitizar_arquivo(arquivo_exemplo):
+    resultado = sanitizar_arquivo(arquivo_exemplo)
+    assert resultado is True, "A sanitização falhou"

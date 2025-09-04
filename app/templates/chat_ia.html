@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h1>Chat com IA</h1>
+<form method="POST">
+ <input name="pergunta" placeholder="Digite sua pergunta" required>
+ <button type="submit">Perguntar</button>
+</form>
+{% if resposta %}
+<p><strong>Resposta:</strong> {{ resposta }}</p>
+{% endif %}
+<p><a href="/dashboard">Voltar ao Dashboard</a></p>
+{% endblock %}
