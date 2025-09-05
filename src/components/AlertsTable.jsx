@@ -1,13 +1,12 @@
-import React from 'react';
-function AlertsTable() {
+export default function AlertsTable() {
   const alerts = [
-    { tipo: "Login suspeito", data: "22/08/2025", status: "Pendente" },
-    { tipo: "Vazamento de dados", data: "20/08/2025", status: "Resolvido" },
+    { id: 1, tipo: 'Login suspeito', data: '22/08/2025', status: 'Pendente' },
+    { id: 2, tipo: 'Vazamento de dados', data: '20/08/2025', status: 'Resolvido' },
   ];
 
   return (
-    <div className="alerts-table">
-      <h3>Alertas Recentes</h3>
+    <div>
+      <h2>Alertas Recentes</h2>
       <table>
         <thead>
           <tr>
@@ -17,8 +16,8 @@ function AlertsTable() {
           </tr>
         </thead>
         <tbody>
-          {alerts.map((alerta, index) => (
-            <tr key={index}>
+          {alerts.map((alerta) => (
+            <tr key={alerta.id}>
               <td>{alerta.tipo}</td>
               <td>{alerta.data}</td>
               <td>{alerta.status}</td>
@@ -29,5 +28,3 @@ function AlertsTable() {
     </div>
   );
 }
-
-export default AlertsTable;

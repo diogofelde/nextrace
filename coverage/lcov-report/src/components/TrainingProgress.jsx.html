@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -87,7 +87,13 @@
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -96,14 +102,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -111,30 +110,43 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import { Bar } from "react-chartjs-2";
-&nbsp;
-function TrainingProgress() {
-  const data = {
-    labels: ["Phishing", "Senhas", "Privacidade", "Engenharia Social"],
-    datasets: [
-      {
-        label: "Progresso (%)",
-        data: [80, 60, 90, 50],
-        backgroundColor: "#0077cc",
-      },
-    ],
-  };
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default function TrainingProgress() {
+  const trainings = [
+    { nome: 'Simulação de Ataque', progresso: 80 },
+    { nome: 'Resposta a Incidentes', progresso: 45 },
+  ];
 &nbsp;
   return (
-    &lt;div className="training-progress"&gt;
-      &lt;h3&gt;Progresso de Treinamentos&lt;/h3&gt;
-      &lt;Bar data={data} /&gt;
+    &lt;div className="bg-white p-4 rounded shadow"&gt;
+      &lt;h2 className="text-lg font-semibold mb-2"&gt;Progresso de Treinamentos&lt;/h2&gt;
+      &lt;ul className="space-y-2"&gt;
+        {trainings.map((item, index) =&gt; (
+          &lt;li key={index}&gt;
+            &lt;div className="flex justify-between text-sm font-medium text-gray-700"&gt;
+              &lt;span&gt;{item.nome}&lt;/span&gt;
+              &lt;span&gt;{item.progresso}%&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div className="w-full bg-gray-200 rounded h-2 mt-1"&gt;
+              &lt;div
+                className="bg-blue-500 h-2 rounded"
+                style={{ width: `${item.progresso}%` }}
+              &gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+        ))}
+      &lt;/ul&gt;
     &lt;/div&gt;
   );
 }
-&nbsp;
-export default TrainingProgress;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -142,7 +154,7 @@ export default TrainingProgress;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-09-04T02:01:50.984Z
+                at 2025-09-04T21:52:36.636Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

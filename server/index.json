@@ -1,0 +1,43 @@
+// index.js
+
+/**
+ * Servidor básico Express para o projeto nextrace
+ * Pronto para copiar e colar.
+ */
+
+const express = require('express')
+const path = require('path')
+require('dotenv').config()             // carrega variáveis de .env, se existir
+
+const app = express()
+const PORT = process.env.PORT || 3000  // porta padrão ou via env
+
+// ─── Middlewares ──────────────────────────────────────────────────────────────
+// Permite parsear JSON no corpo das requisições
+app.use(express.json())
+// Permite parsear dados de formulários (x-www-form-urlencoded)
+app.use(express.urlencoded({ extended: true }))
+
+// Servir arquivos estáticos da pasta "public/"
+app.use(express.static(path.join(__dirname, 'public')))
+
+// ─── Rotas ────────────────────────────────────────────────────────────────────
+// Rota de health-check
+app.get('/health', (req, res) => {
+  res.status(200).send('OK')
+})
+
+// Exemplo de API
+app.get('/api/status', (req, res) => {
+  res.json({ status: 'nextrace API funcionando!', timestamp: Date.now() })
+})
+
+// Rota catch-all para aplicações single-page (React/Vue/Angular)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'))
+})
+
+// ─── Inicialização do servidor ────────────────────────────────────────────────
+app.listen(PORT, () => {
+  console.log(`Servidor nextrace rodando em http://localhost:${PORT}`)
+})

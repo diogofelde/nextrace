@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "nextrace",
-    "prod": "nextrace"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "nextrace0"
+  }
 }

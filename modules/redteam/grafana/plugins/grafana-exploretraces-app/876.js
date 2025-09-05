@@ -1,0 +1,152 @@
+"use strict";
+(self.webpackChunkgrafana_exploretraces_app =
+ self.webpackChunkgrafana_exploretraces_app || []).push([
+ [876],
+ {
+ 876: (e, n, r) => {
+ (r.r(n), r.d(n, { default: () => a }));
+ var a = {
+ "grafana-scenes": {
+ components: {
+ "adhoc-filter-pill": {
+ "edit-filter-with-key":
+ "Filter mit Schlssel {{keyLabel}} bearbeiten",
+ "managed-filter": "{{origin}} verwalteter Filter",
+ "remove-filter-with-key":
+ "Filter mit Schlssel {{keyLabel}} entfernen",
+ },
+ "adhoc-filters-combobox": {
+ "remove-filter-value": "Filterwert entfernen {{itemLabel}}",
+ "use-custom-value":
+ "Benutzerdefinierten Wert verwenden: {{itemLabel}}",
+ },
+ "fallback-page": {
+ content:
+ "Wenn Sie ber einen Link hierher gekommen sind, enthlt diese Anwendung mglicherweise einen Fehler.",
+ subTitle: "Die URL stimmt mit keiner Seite berein",
+ title: "Nicht gefunden",
+ },
+ "nested-scene-renderer": {
+ "collapse-button-label": "Szene ausblenden",
+ "expand-button-label": "Szene einblenden",
+ "remove-button-label": "Szene entfernen",
+ },
+ "scene-debugger": {
+ "object-details": "Objektdetails",
+ "scene-graph": "Szenengraph",
+ "title-scene-debugger": "Szenen-Debugger",
+ },
+ "scene-grid-row": {
+ "collapse-row": "Zeile ausblenden",
+ "expand-row": "Zeile einblenden",
+ },
+ "scene-time-range-compare-renderer": {
+ "button-label": "Vergleich",
+ "button-tooltip": "Zeitrahmenvergleich aktivieren",
+ },
+ splitter: {
+ "aria-label-pane-resize-widget":
+ "Widget zur Grennderung des Bereichs",
+ },
+ "viz-panel": { title: { title: "Titel" } },
+ "viz-panel-explore-button": { explore: "Entdecken" },
+ "viz-panel-renderer": {
+ "loading-plugin-panel": "Plugin-Panel wird geladen",
+ "panel-plugin-has-no-panel-component":
+ "Das Panel-Plugin hat keine Panel-Komponente",
+ },
+ "viz-panel-series-limit": {
+ "content-rendering-series-single-panel-impact-performance":
+ "Das Rendern von zu vielen Reihen in einem einzigen Panel kann die Leistung beeintrchtigen und das Lesen der Daten erschweren.",
+ "warning-message":
+ "Es werden nur {{seriesLimit}}Reihen angezeigt",
+ },
+ },
+ utils: {
+ "controls-label": { "tooltip-remove": "Entfernen" },
+ "loading-indicator": {
+ "content-cancel-query": "Abfrage abbrechen",
+ },
+ },
+ variables: {
+ "ad-hoc-combobox": {
+ "aria-label-edit-filter-operator": "Filteroperator bearbeiten",
+ },
+ "ad-hoc-filter-builder": {
+ "aria-label-add-filter": "Filter hinzufgen",
+ "title-add-filter": "Filter hinzufgen",
+ },
+ "ad-hoc-filter-renderer": {
+ "aria-label-remove-filter": "Filter entfernen",
+ "key-select": { "placeholder-select-label": "Label auswhlen" },
+ "label-select-label": "Label auswhlen",
+ "title-remove-filter": "Filter entfernen",
+ "value-select": { "placeholder-select-value": "Wert auswhlen" },
+ },
+ "data-source-variable": { label: { default: "Standard" } },
+ "default-group-by-custom-indicator-container": {
+ "aria-label-clear": "lschen",
+ tooltip:
+ "Wird in diesem Dashboard standardmig angewendet. Wenn es bearbeitet wird, wird es auf andere Dashboards bertragen.",
+ "tooltip-restore-groupby-set-by-this-dashboard":
+ "Die Einstellung Gruppieren nach von diesem Dashboard wiederherstellen.",
+ },
+ "format-registry": {
+ formats: {
+ description: {
+ "commaseparated-values": "Kommagetrennte Werte",
+ "double-quoted-values": "Doppelt angegebene Werte",
+ "format-date-in-different-ways":
+ "Datum auf verschiedene Arten formatieren",
+ "format-multivalued-variables-using-syntax-example":
+ "Formatieren Sie mehrwertige Variablen mit der glob-Syntax, Beispiel {value1,value2}",
+ "html-escaping-of-values": "HTML-Escaping von Werten",
+ "json-stringify-value": "JSON-Stringify-Wert",
+ "keep-value-as-is": "Wert unverndert lassen",
+ "multiple-values-are-formatted-like-variablevalue":
+ "Mehrere Werte werden als variable=value formatiert",
+ "single-quoted-values": "Einfach angegebene Werte",
+ "useful-escaping-values-taking-syntax-characters":
+ "Ntzlich fr URL-Escaping-Werte, die URI-Syntaxzeichen nutzen",
+ "useful-for-url-escaping-values":
+ "Ntzlich fr URL-Escaping-Werte",
+ "values-are-separated-by-character":
+ "Werte werden durch das Zeichen | getrennt",
+ },
+ },
+ },
+ "group-by-variable-renderer": {
+ "aria-label-group-by-selector": "Nach Selektor gruppieren",
+ "placeholder-group-by-label": "Nach Label gruppieren",
+ },
+ "interval-variable": {
+ "placeholder-select-value": "Wert auswhlen",
+ },
+ "loading-options-placeholder": {
+ "loading-options": "Optionen werden geladen",
+ },
+ "multi-value-apply-button": { apply: "Anwenden" },
+ "no-options-placeholder": {
+ "no-options-found": "Keine Optionen gefunden",
+ },
+ "options-error-placeholder": {
+ "error-occurred-fetching-labels-click-retry":
+ "Beim Abrufen der Label ist ein Fehler aufgetreten. Klicken Sie zum Wiederholen",
+ },
+ "test-object-with-variable-dependency": {
+ title: { hello: "Hallo" },
+ },
+ "test-variable": { text: { text: "Text" } },
+ "variable-value-input": {
+ "placeholder-enter-value": "Wert eingeben",
+ },
+ "variable-value-select": {
+ "placeholder-select-value": "Wert auswhlen",
+ },
+ },
+ },
+ };
+ },
+ },
+]);
+//# sourceMappingURL=876.js.map

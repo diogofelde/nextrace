@@ -1,0 +1,8 @@
+/ataques_global
+  └── [id_ataque]
+        ├── tipo: "DDoS"
+        ├── origem: "Rússia"
+        ├── destino: "Brasil"
+        ├── intensidade: "Alta"
+        ├── timestamp: "2025-08-26T16:00:00Z"
+        └── fonte: "Shodan"

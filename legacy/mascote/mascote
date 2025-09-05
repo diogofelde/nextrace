@@ -1,0 +1,9 @@
+mascote/
+├── static/mascote/
+│   ├── style.css
+│   ├── script.js
+│   ├── medalha1.png
+│   ├── medalha2.png
+│   ├── mascote-feliz.png
+├── templates/mascote/
+│   └── painel.html

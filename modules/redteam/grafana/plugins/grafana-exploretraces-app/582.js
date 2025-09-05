@@ -1,0 +1,147 @@
+"use strict";
+(self.webpackChunkgrafana_exploretraces_app =
+ self.webpackChunkgrafana_exploretraces_app || []).push([
+ [582],
+ {
+ 3582: (e, a, i) => {
+ (i.r(a), i.d(a, { default: () => t }));
+ var t = {
+ "grafana-scenes": {
+ components: {
+ "adhoc-filter-pill": {
+ "edit-filter-with-key": "Edytuj filtr zkluczem {{keyLabel}}",
+ "managed-filter": "Filtr zarzdzany ({{origin}})",
+ "remove-filter-with-key": "Usu filtr zkluczem {{keyLabel}}",
+ },
+ "adhoc-filters-combobox": {
+ "remove-filter-value": "Usu warto filtra {{itemLabel}}",
+ "use-custom-value":
+ "Uyj wartoci niestandardowej: {{itemLabel}}",
+ },
+ "fallback-page": {
+ content:
+ "Jeli doprowadzi Ci tutaj link, moe to oznacza bd waplikacji.",
+ subTitle: "Adres URL nie pasuje do adnej strony",
+ title: "Nie znaleziono",
+ },
+ "nested-scene-renderer": {
+ "collapse-button-label": "Zwi scen",
+ "expand-button-label": "Rozwi scen",
+ "remove-button-label": "Usu scen",
+ },
+ "scene-debugger": {
+ "object-details": "Szczegy obiektu",
+ "scene-graph": "Wykres sceny",
+ "title-scene-debugger": "Debuger sceny",
+ },
+ "scene-grid-row": {
+ "collapse-row": "Zwi wiersz",
+ "expand-row": "Rozwi wiersz",
+ },
+ "scene-time-range-compare-renderer": {
+ "button-label": "Porwnanie",
+ "button-tooltip": "Wcz porwnanie ram czasowych",
+ },
+ splitter: {
+ "aria-label-pane-resize-widget": "Widet zmiany rozmiaru okienka",
+ },
+ "viz-panel": { title: { title: "Tytu" } },
+ "viz-panel-explore-button": { explore: "Eksploruj" },
+ "viz-panel-renderer": {
+ "loading-plugin-panel": "adowanie panelu wtyczki",
+ "panel-plugin-has-no-panel-component":
+ "Wtyczka panelu nie zawiera komponentu panelu",
+ },
+ "viz-panel-series-limit": {
+ "content-rendering-series-single-panel-impact-performance":
+ "Renderowanie zbyt wielu szeregw wjednym panelu moe wpyn na wydajno iutrudni odczyt danych.",
+ "warning-message": "Wywietlanie tylko {{seriesLimit}}szeregw",
+ },
+ },
+ utils: {
+ "controls-label": { "tooltip-remove": "Usu" },
+ "loading-indicator": { "content-cancel-query": "Anuluj zapytanie" },
+ },
+ variables: {
+ "ad-hoc-combobox": {
+ "aria-label-edit-filter-operator": "Edytuj operator filtra",
+ },
+ "ad-hoc-filter-builder": {
+ "aria-label-add-filter": "Dodaj filtr",
+ "title-add-filter": "Dodaj filtr",
+ },
+ "ad-hoc-filter-renderer": {
+ "aria-label-remove-filter": "Usu filtr",
+ "key-select": { "placeholder-select-label": "Wybierz etykiet" },
+ "label-select-label": "Wybierz etykiet",
+ "title-remove-filter": "Usu filtr",
+ "value-select": { "placeholder-select-value": "Wybierz warto" },
+ },
+ "data-source-variable": { label: { default: "domylne" } },
+ "default-group-by-custom-indicator-container": {
+ "aria-label-clear": "wyczy",
+ tooltip:
+ "Zastosowano domylnie do tego pulpitu. Wprzypadku edycji zmiana zostanie uwzgldniona na innych pulpitach.",
+ "tooltip-restore-groupby-set-by-this-dashboard":
+ "Przywr grupowanie ustawione przez ten pulpit.",
+ },
+ "format-registry": {
+ formats: {
+ description: {
+ "commaseparated-values": "Wartoci rozdzielone przecinkami",
+ "double-quoted-values": "Wartoci wpodwjnym cudzysowie",
+ "format-date-in-different-ways":
+ "Formatowanie daty na rne sposoby",
+ "format-multivalued-variables-using-syntax-example":
+ "Formatowanie zmiennych wielowartociowych za pomoc skadni glob, np. {value1,value2}",
+ "html-escaping-of-values":
+ "Modyfikowanie wartoci wkodzie HTML",
+ "json-stringify-value": "Warto konwersji na cig JSON",
+ "keep-value-as-is": "Zachowaj warto wobecnej postaci",
+ "multiple-values-are-formatted-like-variablevalue":
+ "Wiele wartoci jest sformatowanych wpostaci zmienna=warto",
+ "single-quoted-values": "Wartoci wpojedynczym cudzysowie",
+ "useful-escaping-values-taking-syntax-characters":
+ "Przydatne wprzypadku wartoci unikowych wadresach URL zuwzgldnieniem znakw skadni identyfikatora URI",
+ "useful-for-url-escaping-values":
+ "Przydatne wprzypadku wartoci znakw unikowych wadresach URL",
+ "values-are-separated-by-character":
+ "Wartoci s rozdzielone znakiem |",
+ },
+ },
+ },
+ "group-by-variable-renderer": {
+ "aria-label-group-by-selector": "Grupuj wedug selektora",
+ "placeholder-group-by-label": "Grupuj wedug etykiety",
+ },
+ "interval-variable": {
+ "placeholder-select-value": "Wybierz warto",
+ },
+ "loading-options-placeholder": {
+ "loading-options": "adowanie opcji",
+ },
+ "multi-value-apply-button": { apply: "Zastosuj" },
+ "no-options-placeholder": {
+ "no-options-found": "Nie znaleziono opcji",
+ },
+ "options-error-placeholder": {
+ "error-occurred-fetching-labels-click-retry":
+ "Podczas pobierania etykiet wystpi bd. Kliknij, aby sprbowa ponownie",
+ },
+ "test-object-with-variable-dependency": {
+ title: { hello: "Cze!" },
+ },
+ "test-variable": { text: { text: "Tekst" } },
+ "variable-value-input": {
+ "placeholder-enter-value": "Wprowad warto",
+ },
+ "variable-value-select": {
+ "placeholder-select-value": "Wybierz warto",
+ },
+ },
+ },
+ };
+ },
+ },
+]);
+//# sourceMappingURL=582.js.map

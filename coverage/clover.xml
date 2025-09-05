@@ -1,66 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1756951311031" clover="3.2.0">
-  <project timestamp="1756951311031" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="13" elements="31" coveredelements="31" complexity="0" loc="18" ncloc="18" packages="3" files="11" classes="11"/>
-    <package name="src">
+<coverage generated="1757034392754" clover="3.2.0">
+  <project timestamp="1757034392754" name="All files">
+    <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14" elements="39" coveredelements="39" complexity="0" loc="25" ncloc="25" packages="1" files="9" classes="9"/>
+    <file name="AlertsTable.jsx" path="E:\Projeto\NexTraceFinal\src\components\AlertsTable.jsx">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="App.jsx" path="E:\Projeto\NexTraceFinal\src\App.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-      <file name="AppTailwindTest.jsx" path="E:\Projeto\NexTraceFinal\src\AppTailwindTest.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-      </file>
-      <file name="main.jsx" path="E:\Projeto\NexTraceFinal\src\main.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="6" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components">
-      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
-      <file name="AlertsTable.jsx" path="E:\Projeto\NexTraceFinal\src\components\AlertsTable.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-      </file>
-      <file name="Header.jsx" path="E:\Projeto\NexTraceFinal\src\components\Header.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-      </file>
-      <file name="IdentityStatus.jsx" path="E:\Projeto\NexTraceFinal\src\components\IdentityStatus.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-      </file>
-      <file name="KPIOverview.jsx" path="E:\Projeto\NexTraceFinal\src\components\KPIOverview.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-      </file>
-      <file name="Recommendations.jsx" path="E:\Projeto\NexTraceFinal\src\components\Recommendations.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-      </file>
-      <file name="Sidebar.jsx" path="E:\Projeto\NexTraceFinal\src\components\Sidebar.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="1" type="stmt"/>
-      </file>
-      <file name="TrainingProgress.jsx" path="E:\Projeto\NexTraceFinal\src\components\TrainingProgress.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.pages">
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+    </file>
+    <file name="Chart.jsx" path="E:\Projeto\NexTraceFinal\src\components\Chart.jsx">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+    </file>
+    <file name="Dashboard.jsx" path="E:\Projeto\NexTraceFinal\src\components\Dashboard.jsx">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="Dashboard.jsx" path="E:\Projeto\NexTraceFinal\src\pages\Dashboard.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="12" count="1" type="stmt"/>
-      </file>
-    </package>
+      <line num="1" count="1" type="stmt"/>
+    </file>
+    <file name="Header.jsx" path="E:\Projeto\NexTraceFinal\src\components\Header.jsx">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+    </file>
+    <file name="IdentityStatus.jsx" path="E:\Projeto\NexTraceFinal\src\components\IdentityStatus.jsx">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+    </file>
+    <file name="KPIOverview.jsx" path="E:\Projeto\NexTraceFinal\src\components\KPIOverview.jsx">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+    </file>
+    <file name="Recommendations.jsx" path="E:\Projeto\NexTraceFinal\src\components\Recommendations.jsx">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+    </file>
+    <file name="Sidebar.jsx" path="E:\Projeto\NexTraceFinal\src\components\Sidebar.jsx">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+    </file>
+    <file name="TrainingProgress.jsx" path="E:\Projeto\NexTraceFinal\src\components\TrainingProgress.jsx">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+    </file>
   </project>
 </coverage>

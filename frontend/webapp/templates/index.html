@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <title>Arquivos em Quarentena</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body class="bg-light">
+ <div class="container py-5">
+ <h1 class="mb-4 text-center"> Arquivos em Quarentena</h1>
+
+ <div class="d-flex justify-content-between mb-4">
+ <form method="GET" class="d-flex">
+ <input type="text" name="ext" class="form-control me-2" placeholder="Filtrar por extenso (.py)">
+ <button type="submit" class="btn btn-outline-secondary">Filtrar</button>
+ </form>
+ <form method="POST" action="{{ url_for('upload') }}" enctype="multipart/form-data" class="d-flex">
+ <input type="file" name="file" class="form-control me-2" required>
+ <button type="submit" class="btn btn-outline-primary">Enviar</button>
+ </form>
+ <a href="{{ url_for('logout') }}" class="btn btn-danger">Sair</a>
+ </div>
+
+ {% if files %}
+ <table class="table table-bordered table-hover bg-white">
+ <thead class="table-dark">
+ <tr>
+ <th>Arquivo</th>
+ <th>Ao</th>
+ </tr>
+ </thead>
+ <tbody>
+ {% for file in files %}
+ <tr>
+ <td>{{ file }}</td>
+ <td><a href="{{ url_for('restore', filename=file) }}" class="btn btn-success btn-sm">Restaurar</a></td>
+ </tr>
+ {% endfor %}
+ </tbody>
+ </table>
+ {% else %}
+ <div class="alert alert-info text-center">Nenhum arquivo em quarentena.</div>
+ {% endif %}
+ </div>
+</body>
+</html>

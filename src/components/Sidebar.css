@@ -1,0 +1,19 @@
+.Sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.Sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.Sidebar a {
+  text-decoration: none;
+  color: #333;
+}

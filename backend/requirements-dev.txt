@@ -1,0 +1,21 @@
+# Testes
+pytest==8.4.1
+
+# Ambiente e utilitários
+python-dotenv
+watchdog
+
+# Git e automação
+GitPython
+gitdb
+
+# Ferramentas de visualização e debug
+streamlit
+altair
+
+# Geração de relatórios
+fpdf
+
+# Outros utilitários úteis para dev
+itsdangerous
+Werkzeug

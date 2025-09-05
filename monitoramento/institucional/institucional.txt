@@ -1,8 +1,0 @@
-/ataques_institucional
-  └── [id_ataque]
-        ├── empresa: "Órgão XYZ"
-        ├── tipo: "Phishing"
-        ├── endpoint: "xyz.gov.br/login"
-        ├── risco: "Crítico"
-        ├── timestamp: "2025-08-26T16:30:00Z"
-        └── origem: "IP suspeito"

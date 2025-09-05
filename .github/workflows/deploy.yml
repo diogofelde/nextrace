@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  - tags:
+    tags:
       - 'v*'
 
 jobs:
@@ -63,7 +63,7 @@ jobs:
       - name: Testar aplicação
         run: |
           python manage.py test
-          
-          - name: Rodar testes com pytest
+
+      - name: Rodar testes com pytest
         run: |
           pytest --maxfail=3 --disable-warnings -v
