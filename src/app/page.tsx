@@ -5,8 +5,7 @@ export default function Home() {
       justifyContent: 'center',
       alignItems: 'center',
       height: '100vh',
-      backgroundColor: '#f0f4f8',
-      fontFamily: 'sans-serif'
+      backgroundColor: '#f0f4f8'
     }}>
       <img
         src="/logonextrace.png"
